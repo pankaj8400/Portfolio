@@ -1,0 +1,176 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+
+/* Phones (< 500px) */
+
+
+/* Tablets (501px to 768px) */
+@media (min-width: 501px) and (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .nav-links {
+        gap: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
+
+/* Large Screens (> 1024px) */
+@media (min-width: 1025px) {
+    .navbar {
+        padding: 1rem 3rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .nav-links {
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+}
+/* Responsive Styles for 500px or smaller screens */
+@media (max-width: 500px) {
+    /* Adjust hero section */
+    .hero {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Resize lamp and light images */
+    .lampcontainer .lamp,
+    .lampcontainer .light {
+        width: 150px; /* Adjust size as needed */
+        height: auto;
+        margin-left: -12rem;
+    }
+
+    /* Resize text in hero section */
+    .text-container h3 {
+        font-size: 16px; /* Smaller heading */
+    }
+
+    .text-container h1 {
+        font-size: 20px; /* Smaller main heading */
+    }
+
+    .text-container p {
+        font-size: 14px;
+        line-height: 1.4; /* Adjust for readability */
+    }
+
+    /* Resize button link */
+    .contact-link {
+        font-size: 14px;
+        padding: 10px 20px; /* Adjust padding for smaller buttons */
+    }
+
+    /* Adjust navigation bar */
+    .nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .nav img.menu {
+        width: 30px; /* Adjust size for the menu icon */
+        height: auto;
+    }
+
+    .nav img.logo {
+        width: 100px; /* Adjust size for the logo */
+        height: auto;
+    }
+
+    .nav ul {
+        display: none; /* Hide navigation menu by default */
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%; /* Make it full-width */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav ul li {
+        width: 100%; /* Make each item take full width */
+        text-align: center;
+    }
+
+    /* Show menu on button click */
+    .nav ul.show {
+        display: flex;
+    }
+
+    .nav button#btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
