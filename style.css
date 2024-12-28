@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 .hero {
     background: #1d2026;
     min-height: 100vh;
@@ -17,6 +18,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 20px 8%;
+   
 }
 
 nav .menu {
@@ -93,7 +95,7 @@ button span {
 
 .text-container {
     max-width: 600px;
-    margin-top: 7%;
+    margin-top: 8%;
     margin-left: 50%;
 }
 
@@ -149,4 +151,279 @@ border-radius: 2px  ;
 
 .on{
     opacity:1 ;
+}
+.content {
+    padding: 50px 8%;
+    background-color: #1d2026; /* Background consistent throughout */
+    color: #fff;
+}
+
+.experience,
+.skills,.about,.contact,.projects {
+    margin-bottom: 50px;
+}
+
+.experience h1,
+.skills h1,.about h1,.contact h1,.projects h1 {
+    font-size: 36px;
+    color: #00986f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.experience ul,
+.contact ul,
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.experience ul li,
+.contact ul li,
+.skills ul li {
+    margin-bottom: 15px;
+}
+
+.experience ul li span,
+.skills ul li span {
+    font-weight: bold;
+    color: #00986f;
+}
+
+.experience ul li::before,
+.skills ul li::before {
+    content: "•";
+    color: #00986f;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1d2026;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #00986f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.footer{
+    text-align: right;
+    margin-right: 2%;
+}
+.main{
+    text-align: center;
+}
+/* Fixed Navbar */
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #1d2026;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Certificate Section */
+.certificates {
+    padding: 50px 8%;
+    text-align: center;
+    
+}
+
+.cert-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cert-box {
+    background-color: #1d2026;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+
+.cert-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #00986f;
+}
+
+/* About Section */
+.about {
+    position: relative; /* Enable positioning for children */
+    background-color: #000; /* Black background for the content area */
+    color: #fff; /* White text color for contrast */
+    padding: 60px 20px; /* Add spacing inside the section */
+    max-width: 800px; /* Limit the width of the content */
+    margin: 100px auto; /* Center the section horizontally and add vertical spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1; /* Ensure this section appears above the background */
+}
+
+/* "About Me" Heading Outside Content Area */
+.about-title {
+    position: absolute; /* Position it outside the content area */
+    top: -40px; /* Move it above the content area */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Align the title perfectly to the center */
+    background-color: #fff; /* White background for contrast */
+    color: #000; /* Black text for readability */
+    padding: 10px 20px; /* Add internal spacing */
+    border-radius: 20px; /* Rounded pill shape */
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    z-index: 2; /* Ensure it appears above the section */
+}
+
+/* Content Inside the About Section */
+.about-content {
+    text-align: left; /* Align text to the left */
+    line-height: 1.6; /* Improve readability */
+}
+
+.about-content p {
+    margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+/* Experience Section */
+.experience-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.experience-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #1d2026;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.experience-column h2 {
+    color: #00986f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Skills and Certificates Section */
+.skills-certificates {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.skills-certificates .column {
+    flex: 1;
+    padding: 20px;
+    background-color: #1d2026;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.skills-certificates h1 {
+    text-align: center;
+    color: #00986f;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills-certificates ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Project Section */
+.projects {
+    text-align: left; /* Align section content to the left */
+    margin: 20px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.projects-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: green;
+    font-family: 18px;
+    text-align: center; /* Align title to the left */
+}
+
+.projects-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.projects-list li {
+    margin-bottom: 20px;
+    background-color:black; /* Background for content */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project-heading {
+    color: green; /* Green color for heading */
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    color: white; /* White text for description */
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+/* Contact Section */
+.contact {
+    text-align: center; /* Center-align text */
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px; /* Limit the width of the section */
+    background-color: #1d2026; /* Match the background theme */
+    color: #fff;
+    border-radius: 10px;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin: 10px 0;
+    font-size: 18px;
 }

@@ -6,45 +6,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
     <div class="hero">
-        <nav>
-            <img src="images/menu.png" class="menu">
-            <img src="images/title.png" class="logo">
+        <nav class="nav fixed">
+            <img src="menu.png" class="menu" alt="Menu">
+            <img src="title.png" class="logo" alt="Logo">
             <ul>
-                <li><a href="https://github.com/pankaj8400/" target="_blank">GitHub</a></li>
-                <li><a href="https://www.youtube.com/channel/UC08bK9pNT37DQx_W-hP4KEg"target="_blank" >YouTube</a></li>
-                <li><a href="https://drive.google.com/file/d/15jKtmJwfYViNmoXHCIn22wgd-C5m0Aen/view?usp=drivesdk" target="_blank">Resume</a></li>
-                <!-- <li><a href="">Affordable</a></li> -->
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link" target="_blank" class="nav-link">Experience</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Profiles</a>
+                    <div class="dropdown-content">
+                        <a href="https://github.com/pankaj8400/" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/pankaj-dubey-660a23253/" target="_blank">LinkedIn</a>
+                        <a href="https://www.hackerrank.com/profile/pankaj2001gkp" target="_blank">HackerRank</a>
+                        <a href="https://leetcode.com/u/Pankaj85/" target="_blank">LeetCode</a>
+                    </div>
+                </li>
+                <li><a href="#contact" class="nav-link" target="_blank" class="nav-link">Contact me</a></li>
+                <li><a href="https://drive.google.com/file/d/1A2eMzyJ5memeFzTq4PmaTrSnELq0xgo1/view?usp=sharing" target="_blank" class="nav-link">Resume</a></li>
             </ul>
+            
             <button type="button" onclick="togglebtn()" id="btn"> <span></span></button>
         </nav>
         <div class="lampcontainer">
-            <img src="images/lamp.png" class="lamp">
-            <img src="images/light.png" class="light" id="light">
+            <img src="lamp.png" class="lamp" alt="Lamp">
+            <img src="light.png" class="light" id="light" alt="Light">
         </div>
         <div class="text-container">
             <h3>WELCOME</h3>
             <h1>I'm Pankaj Kumar Dubey</h1>
             <p>
                 An individual with a keen interest in Software programs, possessing good interpersonal and analytical
-                skills, who wish to use technical knowledge catering to the needs of the company.
+                skills, who wishes to use technical knowledge catering to the needs of the company.
             </p>
-            <a href="https://t.me/Pankajdubey84">Telegram</a>
+            <a href="https://t.me/Pankajdubey84" class="contact-link">Telegram</a>
             <div class="control">
                 <p>04</p>
                 <div class="line"><span></span></div>
                 <p>05</p>
             </div>
         </div>
-    </div>
-    
-    <script src="./script.js">
+    </header>
+        <main class="main">
+            <section id="about" class="about">
+                <div class="about-content">
+                    <h1>About Me</h1>
+                    <p>
+                        I am an AI/ML developer with a passion for creating innovative solutions that bridge technology and user needs. 
+                        With experience in Python, Django, FastAPI, and advanced Java, I specialize in building web applications, real-time detection systems, 
+                        and dynamic reporting tools.
+                    </p>
+                    <p>
+                        My expertise includes working with Raspberry Pi for live streaming, FastAPI for client-server communication, and crafting intuitive dashboards 
+                        for data visualization. I thrive on tackling challenging projects and delivering impactful results.
+                    </p>
+                </div>
+            </section>
+            
+        
+            <!-- Experience Section -->
+            <section id="experience" class="experience">
+                <h1>My Experience</h1>
+                <div class="experience-columns">
+                    <div class="experience-column">
+                        <h2>Company 1</h2>
+                        <ul>
+                            <li><strong>AI/ML Developer at Cropper Technology</strong> (4 months)</li>
+                            <li>Developed Django applications for reporting and dashboards</li>
+                            <li>Worked with Raspberry Pi for live streaming and person detection</li>
+                            <li>Created APIs for speech-to-text and text summarization</li>
+                        </ul>
+                    </div>
+                    <div class="experience-column">
+                        <h2>Company 2</h2>
+                        <ul>
+                            <li><strong>Software Developer at XYZ Ltd.</strong> (6 months)</li>
+                            <li>Implemented RESTful APIs using FastAPI</li>
+                            <li>Worked on object detection models for industrial automation</li>
+                            <li>Optimized data pipelines for real-time analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Skills and Certificates Section -->
+            <section id="skills-certificates" class="skills-certificates">
+                <div class="column">
+                    <h1>My Skills</h1>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> Python, Java, JavaScript</li>
+                        <li><strong>Frameworks:</strong> Django, FastAPI</li>
+                        <li><strong>Frontend:</strong> HTML, CSS</li>
+                        <li><strong>Tools:</strong> Git, Linux, Docker</li>
+                        <li><strong>AI/ML:</strong> Object Detection, NLTK</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h1>Certificates</h1>
+                    <ul>
+                        <li><strong>Python for Data Science</strong> - Coursera</li>
+                        <li><strong>AI/ML Specialization</strong> - edX</li>
+                        <li><strong>Full Stack Development</strong> - Udemy</li>
+                        <li><strong>Cloud Computing Essentials</strong> - AWS Academy</li>
+                    </ul>
+                </div>
+            </section>
+            <h2 class="projects-title">Projects</h2>
+            <section id="projects" class="projects">
+                
+                <ul class="projects-list">
+                    <li>
+                        <h3 class="project-heading">Project 1</h3>
+                        <p class="project-description">Brief description of Project 1.</p>
+                    </li>
+                    <li>
+                        <h3 class="project-heading">Project 2</h3>
+                        <p class="project-description">Brief description of Project 2.</p>
+                    </li>
+                    <li>
+                        <h3 class="project-heading">Project 3</h3>
+                        <p class="project-description">Brief description of Project 3.</p>
+                    </li>
+                    <li>
+                        <h3 class="project-heading">Project 4</h3>
+                        <p class="project-description">Brief description of Project 4.</p>
+                    </li>
+                </ul>
+            </section>
+            
+            
+        
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <h1>Contact Me</h1>
+                <ul>
+                    <li><strong>Phone:</strong> +91-8400565037</li>
+                    <li><strong>Email:</strong> <a href="mailto:pankaj2001gkp@gmail.com">pankaj2001gkp@gmail.com</a></li>
+                    <li><strong>Telegram:</strong> <a href="https://t.me/Pankajdubey84" target="_blank">t.me/Pankajdubey84</a></li>
+                </ul>
+            </section>
+        </main>
+        
 
-    </script>
+    <footer class="footer">
+        <p>© 2024 Pankaj Kumar Dubey. All rights reserved.</p>
+    </footer>
+</div>
+    <script src="script.js"></script>
 </body>
 
 </html>
