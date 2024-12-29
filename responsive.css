@@ -92,6 +92,7 @@ header {
         font-size: 1.2rem;
     }
 }
+
 /* Responsive Styles for 500px or smaller screens */
 @media (max-width: 500px) {
     /* Adjust hero section */

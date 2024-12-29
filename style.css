@@ -230,9 +230,9 @@ border-radius: 2px  ;
     text-align: right;
     margin-right: 2%;
 }
-.main{
+/* .main{
     text-align: center;
-}
+} */
 /* Fixed Navbar */
 .fixed {
     position: fixed;
