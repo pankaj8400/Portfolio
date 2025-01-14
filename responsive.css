@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     font-family: Arial, sans-serif;
 }
@@ -95,83 +95,158 @@ header {
 
 /* Responsive Styles for 500px or smaller screens */
 @media (max-width: 500px) {
-    /* Adjust hero section */
-    .hero {
+    body {
+        /* margin: 0; */
+        padding: 0;
+        font-size: xx-small;
+    }
+    .fixed{
+        top: 35px;
+    }
+
+    /* Navbar */
+    .nav {
+        /* flex-direction: column; */
+        display: flex;
         padding: 10px;
         text-align: center;
+        margin: -40px;
     }
 
-    /* Resize lamp and light images */
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .nav ul li {
+        margin: 5px 0;
+    }
+
+    .nav .logo {
+        width: 100px;
+        height: auto;
+    }
+    .nav .menu{
+        display: contents;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 20px;
+    }
+
     .lampcontainer .lamp,
     .lampcontainer .light {
-        width: 150px; /* Adjust size as needed */
-        height: auto;
-        margin-left: -12rem;
-    }
-
-    /* Resize text in hero section */
-    .text-container h3 {
-        font-size: 16px; /* Smaller heading */
+        width: 150px; /* Adjust lamp image size */
+        margin-left: -160px;
     }
 
     .text-container h1 {
-        font-size: 20px; /* Smaller main heading */
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .text-container h3 {
+        font-size: 18px;
     }
 
     .text-container p {
         font-size: 14px;
-        line-height: 1.4; /* Adjust for readability */
+        text-align: left;
+    }
+    .light {
+        position: absolute;
+        top: 97%;
+        margin-left: -10px;
+        left: 50%;
+        width: 700px;
+        opacity: 0;
+        transition: opacity 0.5s;
+        transform: translate(0%);
+    }
+    .on{
+        opacity: 1;
     }
 
-    /* Resize button link */
+    /* Buttons */
     .contact-link {
         font-size: 14px;
-        padding: 10px 20px; /* Adjust padding for smaller buttons */
+        padding: 8px 12px;
     }
 
-    /* Adjust navigation bar */
-    .nav {
-        /* flex-direction: column;  */
-        align-items: center;
+    /* About Section */
+    #about {
+        padding: 20px;
     }
 
-    .nav img.menu {
-        width: 30px; /* Adjust size for the menu icon */
-        height: auto;
+    #about h1 {
+        font-size: 22px;
     }
 
-    .nav img.logo {
-        width: 100px; /* Adjust size for the logo */
-        height: auto;
+    #about p {
+        font-size: 14px;
     }
 
-    .nav ul {
-        display: none; /* Hide navigation menu by default */
+    /* Experience Section */
+    .experience {
+        padding: 20px;
+    }
+
+    .experience-columns {
         flex-direction: column;
-        background: #fff;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%; /* Make it full-width */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    .nav ul li {
-        width: 100%; /* Make each item take full width */
+    .experience-column {
+        margin-bottom: 20px;
+    }
+
+    /* Skills and Certificates */
+    #skills-certificates {
+        padding: 20px;
+    }
+
+    #skills-certificates h1 {
+        font-size: 20px;
+    }
+
+    #skills-certificates ul {
+        font-size: 14px;
+    }
+
+    /* Projects Section */
+    #projects {
+        padding: 20px;
+    }
+
+    #projects h3 {
+        font-size: 20px;
+    }
+
+    #projects p {
+        font-size: 14px;
+    }
+
+    /* Contact Section */
+    #contact {
+        padding: 20px;
+    }
+
+    #contact h1 {
+        font-size: 22px;
+    }
+
+    #contact ul {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
         text-align: center;
-    }
-
-    /* Show menu on button click */
-    .nav ul.show {
-        display: flex;
-    }
-
-    .nav button#btn {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-        margin-top: 10px;
+        font-size: 12px;
+        padding: 10px;
     }
 }

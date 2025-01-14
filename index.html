@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
     <div class="hero">
         <nav class="nav fixed">
             <img src="menu.png" class="menu" alt="Menu">
@@ -29,10 +29,11 @@
                         <a href="https://www.linkedin.com/in/pankaj-dubey-660a23253/" target="_blank">LinkedIn</a>
                         <a href="https://www.hackerrank.com/profile/pankaj2001gkp" target="_blank">HackerRank</a>
                         <a href="https://leetcode.com/u/Pankaj85/" target="_blank">LeetCode</a>
+                        <a href="https://pankaj85.pythonanywhere.com" target="_blank">website</a>
                     </div>
                 </li>
                 <li><a href="#contact" class="nav-link" target="_blank" class="nav-link">Contact me</a></li>
-                <li><a href="https://drive.google.com/file/d/1A2eMzyJ5memeFzTq4PmaTrSnELq0xgo1/view?usp=sharing" target="_blank" class="nav-link">Resume</a></li>
+                <li><a href="https://drive.google.com/file/d/1_AkBrKX91e4Zs1lIfrsTZeGvpsWpYPEb/view?usp=sharing">Resume</a></li>
             </ul>
             
             <button type="button" onclick="togglebtn()" id="btn"> <span></span></button>
@@ -42,8 +43,8 @@
             <img src="light.png" class="light" id="light" alt="Light">
         </div>
         <div class="text-container">
-            <h3>WELCOME</h3>
-            <h1>I'm Pankaj Kumar Dubey</h1>
+            
+            <h1>Welcome to my Portfolio</h1>
             <p>
                 An individual with a keen interest in Software programs, possessing good interpersonal and analytical
                 skills, who wishes to use technical knowledge catering to the needs of the company.
@@ -85,12 +86,13 @@
                             <li>Worked with Raspberry Pi for live streaming and person detection</li>
                             <li>Deduct Image through camera then genrate  violation</li>
                             <li>Trained model for object dedection</li>
+                            <li>Create RTSP/HTTP connection</li>
                         </ul>
                     </div>
                     <div class="experience-column">
                         <h2>LinuxBean solutions LLP</h2>
                         <ul>
-                            <li><strong>Software Developer at LinuxBean.</strong> (6 months)</li>
+                            <li><strong>Software Developer at LinuxBean.</strong></li>
                             <li>Implemented RESTful APIs using FastAPI</li>
                             <li>Replace image according to need through ai</li>
                             <li>Optimized data pipelines for real-time analytics</li>
@@ -101,56 +103,61 @@
                 </div>
             </section>
         
-            <!-- Skills and Certificates Section -->
             <section id="skills-certificates" class="skills-certificates">
                 <div class="column">
                     <h1>My Skills</h1>
                     <ul>
-                        <li><strong>Programming Languages:</strong>C/C++, Python, Java, DSA, SQL</li>
-                        <li><strong>Frameworks:</strong> Django, Springboot</li>
-                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-                        <li><strong>Tools:</strong> Git, Linux, Github</li>
-                        <li><strong>AI/ML:</strong> Object Detection, Image Processing, Chatbot</li>
+                        <li><strong class="green-text">Programming Languages:</strong> C/C++, Python, Java, DSA, SQL</li>
+                        <li><strong class="green-text">Frameworks:</strong> Django, Springboot, FastAPI</li>
+                        <li><strong class="green-text">Frontend:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong class="green-text">Tools:</strong> Git, Linux, GitHub</li>
+                        <li><strong class="green-text">AI/ML:</strong> Object Detection, Image Processing, Chatbot, Langchain, Hugging Face, LLM, Generative AI</li>
                     </ul>
                 </div>
                 <div class="column">
                     <h1>Certificates</h1>
                     <ul>
-                        <li><strong>DSA</strong> - Apna College</li>
-                        <li><strong>Java</strong> - MySirG</li>
-                        <li><strong>Full Stack Development</strong> - Oasis Infobyte</li>
-                        <li><strong>Quiz Website</strong> - <a href="https://pankaj85.pythonanywhere.com" target="_blank">https://pankaj85.pythonanywhere.com</a></li>
+                        <li><strong class="green-text">DSA</strong> - Apna College</li>
+                        <li><strong class="green-text">Java</strong> - MySirG</li>
+                        <li><strong class="green-text">Full Stack Development</strong> - Oasis Infobyte</li>
                     </ul>
                 </div>
             </section>
             <h2 class="projects-title">Projects</h2>
-            <section id="projects" class="projects">
-                
-                <ul class="projects-list">
-                    <li>
-                        <h3 class="project-heading">BlackBox</h3>
-                        <p class="project-description">Developed a system using Hailo AI to detect and capture images of individuals without helmets and jackets. All detected violation images are stored on the main server and integrated with a Django-based dashboard to provide graphical analytics of violations. The system also generates detailed violation reports in PDF format, organized by date and analyzed on a per-camera basis.</p>
-                    </li>
-                    <li>
-                        <h3 class="project-heading">Quiz</h3>
-                        <p class="project-description"></p>
-                    </li>
-                    <li>
-                        <h3 class="project-heading">Audio-to-text, Quiz, Chatbot</h3>
-                        <p class="project-description">Brief description of Project 3.</p>
-                    </li>
-                    <li>
-                        <h3 class="project-heading">Student record management system,ATM Interface</h3>
-                        <p class="project-description">Brief description of Project 4.</p>
-                    </li>
-                    <li>
-                        <h3 class="project-heading">GameZone</h3>
-                        <p class="project-description">Brief description of Project 4.</p>
-                    </li>
-
-                </ul>
-            </section>
-            
+<section id="projects" class="projects">
+    <ul class="projects-list">
+        <li>
+            <h3 class="project-heading">BlackBox</h3>
+            <p class="project-description">
+                Developed a system using Hailo AI to detect and capture images of individuals without helmets and jackets. All detected violation images are stored on the main server and integrated with a Django-based dashboard to provide graphical analytics of violations. The system also generates detailed violation reports in PDF format, organized by date and analyzed on a per-camera basis and make server- client relation for image sharing in that folder for server side using API or RTSP/HTTP connection.
+            </p>
+        </li>
+        <li>
+            <h3 class="project-heading">Quiz</h3>
+            <p class="project-description">
+                This project was developed in Django. In this project, users can sign up/log in, while teachers can also register. Students can take quizes exam and that data save to database then teacher login and analytic all student quiz text and admins can manage all facility for remove student, teacher and what facility give teacher all handle by admin using mysqlite database.
+            </p>
+        </li>
+        <li>
+            <h3 class="project-heading">Audio-to-text, Quiz, Chatbot</h3>
+            <p class="project-description">
+                This project is built using FastAPI. Users can upload `.wav` audio files, which are converted to text and after this text summarized all response show in json format, In this project using open- source model sphinix and google-speech-recognization for audio to text, This project handle by long audio as a 1 hour that audio divided into chunk then process that time complexity reduce.
+            </p>
+        </li>
+        <li>
+            <h3 class="project-heading">Student Record Management System, ATM Interface</h3>
+            <p class="project-description">
+                During this internship, I developed an e-commerce website using servlet, jsp in this website admin add any product those want to sell and user also signup/login after purchase a product and other is temperature converter in this project user convert any temperature to farenheight to kelvin, kelvin to celsius etc and atm interface where user check bank balance deposite and withdrawl when user enter max amount those not available in bank then print insufficent balance.
+            </p>
+        </li>
+        <li>
+            <h3 class="project-heading">GameZone</h3>
+            <p class="project-description">
+                This minor college project includes three games in GameZone project: first is puzzle game where user solve a suddko 1 to 9 value every row and column and other is tic-tac-toe game where user play a game with friend and also computer and evil computer in evil computer where computer always won because they are cheat. 
+        </li>
+    </ul>
+</section>
+  
             
         
             <!-- Contact Section -->
