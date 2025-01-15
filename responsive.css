@@ -112,6 +112,7 @@ header {
         text-align: center;
         margin: -40px;
     }
+    
 
     .nav ul {
         display: flex;
@@ -129,15 +130,17 @@ header {
         width: 100px;
         height: auto;
     }
-    .nav .menu{
+    /* .nav .menu{
         display: contents;
-    }
+    } */
 
     /* Hero Section */
     .hero {
         text-align: center;
         padding: 20px;
+        /* background-image: url('title.png'); */     
     }
+   
 
     .lampcontainer .lamp,
     .lampcontainer .light {
@@ -170,6 +173,9 @@ header {
     }
     .on{
         opacity: 1;
+    }
+    .logo{
+        display: none;
     }
 
     /* Buttons */
